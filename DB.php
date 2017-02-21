@@ -8,7 +8,7 @@ class DB
 
     function __construct()
     {
-        $serverName = env("MYSQL_PORT_3306_TCP_ADDR", "localhost");
+        $serverName = env("MYSQL_PORT_3306_TCP_ADDR", "1");
         $databaseName = env("MYSQL_INSTANCE_NAME", "homestead");
         $username = env("MYSQL_USERNAME", "homestead");
         $password = env("MYSQL_PASSWORD", "secret");
