@@ -12,6 +12,7 @@ class DB
         $databaseName = env("MYSQL_INSTANCE_NAME", "temp_db");
         $username = env("MYSQL_USERNAME", "root");
         $password = env("MYSQL_PASSWORD", "6k7TbijO");
+        echo $serverName;
 
         try {
             $this->pdo = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);
